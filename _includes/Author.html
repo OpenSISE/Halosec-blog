@@ -1,0 +1,7 @@
+{% for post in site.posts %}
+	{% for author in post.authors %}
+	{% if author == post.author %}
+	{{ post.url }}
+	{% endif %}
+	{% endfor %}
+{% endfor %}
